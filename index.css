@@ -84,6 +84,10 @@ h3 {
 
 /* Image Carousel */
 
+.carousel .item {
+	height:400px;
+}
+
 .carousel-inner > .item > img {
 	position: absolute;
 	top: 0;
