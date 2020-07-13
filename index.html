@@ -1,0 +1,164 @@
+<!-- HTML Code written by Team Starbucks -->
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Wild Time Zoo | Homepage</title>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700" rel="stylesheet">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+<link rel="stylesheet" type="text/css" href="index.css">
+<script type="text/javascript" src="index.js"></script>
+
+</head>
+
+<body>
+<!--Navbar-->
+<nav class="navbar navbar-expand-lg nav-expand-md navbar-dark" style="background-color: #000000;"> 
+  
+  <!-- Navbar brand --> 
+  <a class="navbar-brand" href="#">
+  <div id="headimg" class="float-left"> <img src = "img/wildtimeLOGOwhite.png" alt="Wild Time Zoo logo"> </div>
+  </a> 
+  
+  <!-- Collapse button -->
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#basicExampleNav"
+	aria-controls="basicExampleNav" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
+  
+  <!-- Collapsible content -->
+  <div class="collapse navbar-collapse" id="basicExampleNav"> 
+    
+    <!-- Links -->
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active"> <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span> </a> </li>
+      <li class="nav-item"> <a class="nav-link" href="animals.html">Animals</a> </li>
+      <li class="nav-item"> <a class="nav-link" href="experiences.html">Our Experiences</a> </li>
+      <li class="nav-item"> <a class="nav-link" href="tickets.html">Tickets</a> </li>
+    </ul>
+    
+    <!-- Search Box -->
+    <form class="form-inline">
+      <div class="md-form my-0">
+        <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+      </div>
+    </form>
+  </div>
+</nav>
+<div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active"> <a href="#"><img class="d-block w-100" src="img/ads/gorilla_ad.png" alt="Gorilla Enclosure"></a> </div>
+    <div class="carousel-item"> <a href="#"><img class="d-block w-100" src="img/ads/educational_ad.png" alt="Education Centre"></a> </div>
+    <div class="carousel-item"> <a href="#"><img class="d-block w-100" src="img/ads/restaurant_ad.png" alt="Wild Time Restaurant and Bar"></a> </div>
+    <div class="carousel-item"> <a href="#"><img class="d-block w-100" src="img/ads/picnic_ad.png" alt=" Hungry Lion Picnic and Barbecue Areas"></a> </div>
+  </div>
+  <!-- Controls --> 
+  <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev"> <span class="carousel-control-prev-icon" aria-hidden="true"></span> <span class="sr-only">Previous</span> </a> <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next"> <span class="carousel-control-next-icon" aria-hidden="true"></span> <span class="sr-only">Next</span> </a> </div>
+<div class="col-12">
+  <h1 style="text-align: center">WELCOME TO WILD TIME ZOO!</h1>
+  <p style="text-align: center">Wild Time Zoo is open year round and offers a unique experience to get up close and personal with the animals.</p><br>
+  <div class="row no-pad">
+    <div class="col-sm-12 col-md-4">
+      <h1 style="text-align: center">TICKETS</h1>
+     <p style="text-align: center">To buy tickets online to our zoo or<br>
+ to find out more information about ticket prices <a href="animals.html" style="color:#11B300"><b>click here</b></a>.</p>
+    </div>
+    <div class="col-sm-12 col-md-4">
+      <h1 style="text-align: center">ANIMALS</h1>
+      <p style="text-align: center">Wild Time Zoo have 8 unique animal species.<br>
+        To find out more information on the animals at the zoo <a href="animals.html" style="color:#11B300"><b>click here</b></a>.</p>
+    </div>
+    <div class="col-sm-12 col-md-4">
+      <h1 style="text-align: center">MEET OUR KEEPERS</h1>
+      <p>Come along to get information about our animals, with our friendly and knowledgeable staff.<br>
+        <p id="date"></p>
+        <script>
+// JavaScript Document
+// Written by Team Starbucks
+
+var days = ["Sunday", "Monday", "Tuesday", "Wednesday","Thursday","Friday", "Saturday"];
+var months = ["January", "February", "March", "April","May","June","July","August", "September","October","November","December"];
+var now = new Date();
+var day = days[now.getDay()];
+var date = now.getDate();
+var month = months[now.getMonth()];
+document.getElementById("date").innerHTML = "Today's date is " + day + ", " + date + " " + month;
+</script>
+        See whats on at Wild Time Zoo today:<br>
+
+        <b>Mornings</b><br>
+
+        <b>10:15 AM</b> Jojo the Giraffe feeds<br>
+
+        <b>10:45 AM</b> Kea Talk<br>
+
+		<b>11:00 AM</b> Lion Talk<br>
+
+		<b>11:15 AM</b> Kai the Kiwi talk<br>
+		
+		<br>
+		
+		<b>Afternoon</b><br>
+
+		<b>12:00 PM</b> Giraffe Talk<br>
+
+		<b>12:30 PM</b> Gorilla Talk<br>
+
+		<b>2:00PM</b> Rex the Rhino Talk<br>
+
+        <b>2.30PM</b> Panda Talk
+        
+        </p>
+      <p class="date"></p>
+    </div>
+  </div>
+  <div class="col-12">
+    <h1 style="text-align: center">ZOO MAP</h1>
+    <p style="text-align: center"> Need help finding your way around? Use this map to help guide your adventure through Wild Time Zoo!</p>
+    <div class="iframe-container">
+      <iframe class="iframe" src="img/map/map.html" style="left: 15%">Your browser does not support iframes.</iframe>
+    </div>
+    <br />
+  </div>
+  
+<!-- Footer -->
+<footer class="page-footer font-small pt-4 text-white footer-dark" style="background-color: #000000"> 
+  
+  <!-- Footer Text -->
+  <div class="container-fluid text-center text-md-left"> 
+    
+    <!-- Grid row -->
+    <div class="row"> 
+      
+      <!-- Grid column -->
+      <div class="col-md-6 mt-md-0 mt-3" style="text-align: center"> 
+        
+        <!-- Content -->
+        <h5 class="text-uppercase font-weight-bold">Contact Us</h5>
+        <p> <i class="fas fa-phone"></i> 07-123-4567<br />
+          <i class="fas fa-at"></i> info@wildtimezoo.co.nz<br />
+        </p>
+      </div>
+      <!-- Grid column -->
+      
+      <hr class="clearfix w-100 d-md-none pb-3">
+      
+      <!-- Grid column -->
+      <div class="col-md-6 mb-md-0 mb-3" style="text-align: center"> 
+        
+        <!-- Content -->
+        <h5 class="text-uppercase font-weight-bold">Opening Hours</h5>
+        <p><i class="far fa-clock"></i> 10 am - 5 pm daily<br />
+          <i class="far fa-calendar"></i> Open 7 days a week except Christmas day<br />
+        </p>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Copyright -->
+  <div class="footer-copyright text-center py-3">© 2019 Team Starbucks </div>
+</footer>
+</body>
+</html>

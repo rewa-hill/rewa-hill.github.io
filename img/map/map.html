@@ -1,0 +1,92 @@
+<html>
+<head>
+<style>
+body{
+background-image:url(zoo_map.png);
+background-repeat:no-repeat;
+background-size: contain;
+font-family: 'Open Sans', sans-serif;
+margin:0;
+}
+.hoverimage {
+  z-index: 10;
+-webkit-transition: opacity 0.8s linear;
+opacity: 1;
+-webkit-transition: all 0.5s ease-out; 
+-moz-transition: all 0.5s ease-out;
+transition: all 0.5s ease-out;
+}
+.hoverimage:hover {
+transform: scale(1.2, 1.2);
+-webkit-transition: opacity 0.6s linear;
+opacity: 1;
+-webkit-transition: all 0.5s ease-out; 
+-moz-transition: all 0.5s ease-out;
+transition: all 0.5s ease-out;
+}
+
+.animals {
+  position: relative;
+  display: inline-block;
+}
+
+.animals .about {
+  width: 220px;
+  background-color: rgba(255,255,255,0.88);
+  color: #10240e;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px;
+  position: absolute;
+  z-index: 1000000000;
+  top: 114%;
+  left: 50%;
+  margin-left: -110px;
+  opacity: 0;
+  transition: opacity 0.5s;
+  font-size: 0.9em;
+  box-shadow: 3px 3px 5px rgba(5,5,5,0.88);
+}
+
+.animals .about {
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+
+.animals:hover .about {
+  opacity: 1;
+}
+
+.about h1 {
+margin: 0;
+font-size: 1.1em;
+color: #dd7500;
+text-transform: uppercase;
+text-shadow: 1px 1px 0 rgba(255,255,255,0.8);
+}
+
+</style>
+
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700" rel="stylesheet">
+</head>
+<body>
+<div class="animals" style="position: relative; top:10%; left:7%;z-index:2"><img class="hoverimage" src="./pointers/giraffe.png" style="margin: 0 19px 0 0;" />
+<span class="about"><h1>Giraffe</h1>Giraffes are located next to the waterfall and the Zoo exit.</span>
+</div>
+<div class="animals" style="position: relative; top:10%; left:18%;z-index:3"><img class="hoverimage" src="./pointers/kiwi.png" style="margin: 0 0 0 23px;" />
+<span class="about"><h1>Kiwi</h1>Kiwis are located across the bridge next to the rhino enclosure.</span>
+</div>
+<div class="animals" style="position: relative; top:28%; left:32%;z-index:4"><img class="hoverimage" src="./pointers/gorilla.png" />
+<span class="about"><h1>Gorilla</h1>Gorillas are located across the bridge next to the rhino enclosure.</span>
+</div>
+<div class="animals" style="position: relative; top:22%; left:12%;z-index:5"><img class="hoverimage" src="./pointers/rhino.png"/>
+<span class="about"><h1>Rhinoceros</h1>Rhinos are located across the bridge between the Gorilla and Kiwi enclosures.</span>
+</div>
+<div class="animals" style="position: relative; top:50%; left:-20%;z-index:6"><img class="hoverimage" src="./pointers/toucan.png" style="margin: 0 0 0 14px;" />
+<span class="about"><h1>Toucan</h1>Toucans are located next to the Hungry Lions Picnic and Barbecues field.</span>
+</div>
+<div class="animals" style="position: relative; top:55%; left:-7%;z-index:7"><img class="hoverimage" src="./pointers/lion.png" />
+<span class="about"><h1>Lion</h1>Lions are located across the bridge from the Rhino enclosure.</span>
+</div>
+</body>
+</html>
